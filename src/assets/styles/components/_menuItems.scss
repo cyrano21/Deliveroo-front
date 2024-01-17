@@ -1,0 +1,25 @@
+.menuItems {
+  h2 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    // font-weight: bold;
+  }
+  .menuItems--Items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0 -10px;
+    margin: 0 -10px;
+
+    @media (max-width: 1124px) {
+      .MenuItems--items {
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+    }
+  }
+}

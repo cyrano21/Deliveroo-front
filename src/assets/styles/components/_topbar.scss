@@ -1,0 +1,12 @@
+.topbar {
+  height: 60px;
+  border-bottom: 1px solid #e9ebeb;
+  .topbar-container {
+    width: 96vw;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+}

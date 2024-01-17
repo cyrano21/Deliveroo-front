@@ -1,0 +1,100 @@
+.cart {
+  width: 350px;
+  position: sticky;
+  top: 0;
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  .cart--card {
+    box-shadow: 0px 22px 24px 0px rgba(46, 51, 51, 0.07);
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 30px 0;
+
+    .cart--validate {
+      display: block;
+      margin: 10px;
+      border-radius: 5px;
+      padding: 1rem;
+      background: #00cdbd;
+      color: white;
+      border: none;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .cart--disabled {
+      cursor: not-allowed;
+      background: #bac3c3;
+      color: #8b9a9b;
+    }
+    .cart--empty {
+      color: #868a8a;
+      text-align: center;
+      padding: 3rem 0;
+    }
+    .cart--items {
+      border-bottom: 1px solid #d1d7d7;
+      margin: 0 10px;
+      max-height: calc(100vh - 300px);
+      overflow: auto;
+      .cart--line {
+        display: flex;
+        align-items: flex-start;
+        padding: 1rem 0;
+        .cart--counter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
+          color: #808484;
+          span {
+            display: flex;
+            min-width: 1rem;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .cart--item-name {
+          flex: 1;
+        }
+      }
+    }
+    .cart--results {
+      margin: 0 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid #d1d7d7;
+      .cart--result-line {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+        .cart--result-name {
+          flex: 1;
+        }
+        .cart--amount {
+          width: 85px;
+          text-align: right;
+        }
+      }
+    }
+    .cart--total {
+      display: flex;
+      align-items: flex-start;
+      padding: 1.3em 0;
+      margin: 0 10px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      .cart--result-name {
+        flex: 1;
+      }
+      .cart--amount {
+        width: 85px;
+        text-align: right;
+      }
+    }
+  }
+}
